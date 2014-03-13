@@ -1,0 +1,7 @@
+{
+	"name":        "Default Simpl Theme",
+	"slug":        "simpl::default",
+	"description": "The default theme.",
+	"author":      "Simpl Ltd",
+	"version":     "0.1"
+}
