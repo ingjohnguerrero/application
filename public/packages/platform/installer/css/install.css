@@ -1,0 +1,194 @@
+/**
+ * Part of the Platform application.
+ *
+ * NOTICE OF LICENSE
+ *
+ * Licensed under the 3-clause BSD License.
+ *
+ * This source file is subject to the 3-clause BSD License that is
+ * bundled with this package in the LICENSE file.  It is also available at
+ * the following URL: http://www.opensource.org/licenses/BSD-3-Clause
+ *
+ * @package    Platform
+ * @version    2.0
+ * @author     Cartalyst LLC
+ * @license    BSD License (3-clause)
+ * @copyright  (c) 2011 - 2013, Cartalyst LLC
+ * @link       http://getplatform.com
+ */
+
+ .preload * {
+ 	-webkit-transition: none !important;
+ 	-moz-transition: none !important;
+ 	-ms-transition: none !important;
+ 	-o-transition: none !important;
+ }
+
+ *, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+ body, html { font-size: 100%; padding: 0; margin: 0;}
+
+ body {
+ 	font-family: 'Source Code Pro', sans-serif;
+ 	color: #2d3337;
+ 	background: #f7f7f7;
+ }
+
+ hr {
+ 	border:none;
+ 	margin:32px 0;
+ }
+
+ .install {
+ 	overflow: hidden;
+ 	text-align: center;
+ 	max-width: 960px;
+ 	margin: 3em auto;
+ }
+
+
+
+ .install section {
+ 	margin: 0 auto 48em auto;
+ }
+
+ /* Clear floats of children */
+ .install section:before,
+ .install section:after {
+ 	content: " ";
+ 	display: table;
+ }
+
+ .install section:after {
+ 	clear: both;
+ }
+
+ /* Text styling */
+ .install section h2 {
+ 	font-size: 5em;
+ 	font-weight: 300;
+ 	line-height: 1;
+ }
+
+ .install section p {
+ 	font-size: 2em;
+ 	font-weight: 300;
+ }
+
+ .install input,
+ .install select {
+ 	margin:1em 0;
+ }
+
+ .install fieldset {
+ 	max-width:480px;
+ 	margin:0 auto;
+ 	padding:0 8px;
+ }
+
+ .loader{
+ 	position: fixed;
+ 	top:0;
+ 	left:0;
+ 	z-index: 5;
+
+ 	display: none;
+
+ 	width:100%;
+ 	height:100%;
+
+ 	text-align: center;
+ 	font-size:48px;
+ 	font-weight:700;
+ 	font-family: 'Source Code Pro', sans-serif;
+ 	letter-spacing: 2px;
+ 	color:2d3337;
+ 	background: rgba(255, 255, 255, 0.7);
+ }
+
+ .loader div {
+ 	display: table;
+ 	width:100%;
+ 	height:100%;
+ }
+
+ .loader span {
+ 	display: table-cell;
+ 	vertical-align:middle;
+ 	text-align: center;
+ 	width:280px;
+ }
+
+ .btn-install {
+ 	color: #fff;
+ 	background-color: #2d3337;
+ 	border:none;
+ }
+
+ .btn-install:hover,
+ .btn-install:focus,
+ .btn-install:active {
+ 	color: #fff;
+ 	text-shadow: none;
+ 	background-color: #40494F;
+ }
+
+ .form-horizontal fieldset {
+ 	margin-bottom:32px;
+ }
+
+ .licence {
+ 	width:80%;
+ 	margin:32px auto 0 auto;
+ 	text-align: center;
+
+ }
+
+
+ .notifications {
+ 	background:#2d3337;
+ 	text-align: center;
+ 	margin:16px 0;
+ }
+
+ .notify {
+ 	color:#fff;
+ 	font-size: 1em !important;
+ 	margin: 0;
+ 	padding:16px;
+ 	vertical-align: middle;
+ }
+
+ /* Example media queries */
+
+ @media screen and (max-width: 73.5em) {
+ 	.cbp-so-scroller {
+ 		font-size: 65%;
+ 	}
+
+ 	.cbp-so-section h2 {
+ 		margin: 0;
+ 	}
+
+ 	.cbp-so-side img {
+ 		max-width: 120%;
+ 	}
+ }
+
+ @media screen and (max-width: 41.125em) {
+
+ 	.cbp-so-section {
+ 		margin: 0;
+ 	}
+
+ 	.cbp-so-side {
+ 		float: none;
+ 		width: 100%;
+ 		text-align: center;
+ 	}
+
+ 	.cbp-so-side img {
+ 		max-width: 100%;
+ 		text-align:center;
+ 		display: none;
+ 	}
+ }

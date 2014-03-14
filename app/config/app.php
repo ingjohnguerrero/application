@@ -65,7 +65,7 @@ return array(
 	|
 	*/
 
-	'key' => '19BJmDf4mprrTLqKp5FpCjftGy47YwS7',
+	'key' => 'oxQWoebKCTtqx75ESyfHUvllkStB25CP',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -107,11 +107,13 @@ return array(
 		'Illuminate\View\ViewServiceProvider',
 		'Illuminate\Workbench\WorkbenchServiceProvider',
 		
-		
+		'Cartalyst\Api\Laravel\ApiServiceProvider',
+		'Cartalyst\Sentry\Laravel\SentryServiceProvider',		
 		'Cartalyst\DataGrid\DataGridServiceProvider',
 		'Cartalyst\Extensions\ExtensionsServiceProvider',
 		'Cartalyst\Themes\ThemeServiceProvider',
 				
+		'Platform\Installer\InstallerServiceProvider',				
 		'Platform\Foundation\Laravel\PlatformServiceProvider',
 
 	),
@@ -180,13 +182,20 @@ return array(
 		'Validator'       => 'Illuminate\Support\Facades\Validator',
 		'View'            => 'Illuminate\Support\Facades\View',
 
+		'Activation'    => 'Cartalyst\Sentry\Laravel\Facades\Activation',
+		'API'           => 'Cartalyst\Api\Laravel\Facades\API',
+		'ApiResponse'   => 'Cartalyst\Api\Response',
+		'Asset'         => 'Cartalyst\Themes\Facades\Asset',
+		'Auth'          => 'Cartalyst\Sentry\Laravel\Facades\Sentry',
 		'DataGrid'      => 'Cartalyst\DataGrid\Facades\DataGrid',
 		'Extension'     => 'Cartalyst\Extensions\Extension',
 		'Extensions'    => 'Cartalyst\Extensions\Facades\Extensions',
-		
+		'Reminder'      => 'Cartalyst\Sentry\Laravel\Facades\Reminder',
+		'Sentry'        => 'Cartalyst\Sentry\Laravel\Facades\Sentry',		
 		'Asset'         => 'Cartalyst\Themes\Facades\Asset',
 		'Theme'         => 'Cartalyst\Themes\Facades\Theme',
 		
+		'Installer'     => 'Platform\Installer\Facades\Installer',
 		'Platform'      => 'Platform\Foundation\Laravel\Facades\Platform',				
 	),
 
